@@ -5,19 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
 </head>
 
 <body>
-    <h1>Realizar Formulario de paula cocina</h1>
-    <p>https://www.paulinacocina.net/budin-de-pan-4-pasos/10866</p>
-    <form action="clase4.html" method="GET">
-        <label>Hola</label>
-        <input type="text" placeholder="Pone tu nombre" required>
+    <header>
+        <a href="./clase4PaulinaCocinaIndex.html"><img src="./img/Paulina-Cocina-Color-1-207x47.png"></a>
+        <nav>
+            <a href="clase4form.html">Recetas</a>
+            <a href="clase4form.html">Recetas Dulces</a>
+            <a href="clase4form.html">Tienda Online</a>
+            <a href="clase4form.html">Contactenos</a>
+        </nav>
+    </header>
+    <main>
+        <h1>¡¡¡¡Contactanos!!!!</h1>
 
-        <input type="submit">
-    </form>
-
+        <form action="clase4.html" method="GET">
+            <p>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre..." required>*
+            </p>
+            <p>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Ingrese su apellido..." required>*
+            </p>
+            <p>
+                <label for="ocupacion">Ocupacion</label>
+                <select name="ocupacion" required>
+                    <option value="reclutador">Reclutador</option>
+                    <option value="desarrollador">Desarrollador</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="otro">Otro</option>
+                </select>*
+            </p>
+            <p>
+                <legend>Mensaje</legend>
+                <textarea name="mensaje" cols="25" rows="10"></textarea>
+            </p>
+            <p><input type="checkbox"> Acepto Terminos y condiciones</p>
+            <input type="submit">
+        </form>
+    </main>
+    <section>
+        <h3>Donde me encontras?</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76228.89488965404!2d-58.43353533396538!3d-34.88215713054951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd54588ed1f1d%3A0x2091411f6b32e343!2sGlew%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1678560353002!5m2!1ses!2sar"
+            width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 </body>
 
 </html>
