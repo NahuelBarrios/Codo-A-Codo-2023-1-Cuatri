@@ -4,261 +4,298 @@
     margin: 0;
 }
 
-@media screen and (min-width: 0px) and (max-width:767px) {
+/*@media screen and (min-width: 0px) and (max-width:767px) {*/
 
-    .header {
+.header {
+    display: flex;
+    width: 100%;
+    background-color: rgb(70, 81, 82);
+    flex-direction: column;
+}
+
+.contenedor {
+    margin: auto;
+    padding: 5px;
+}
+
+.headerNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: initial;
+    padding: 1rem 1rem 0.1rem 1rem;
+    width: 100%;
+
+}
+
+.contenedorLogo {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedorLogo a {
+    width: 50%;
+}
+
+.contenedorLogo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedorLogo h2 {
+    color: white;
+}
+
+.navegacion {
+    width: 100%;
+
+}
+
+.listaNav {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.linkNav {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.laConferencia {
+    background: linear-gradient(to bottom, #00000085, #00000085), url("../assets/img/ba1.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: initial;
+    text-align: right;
+    padding: 10px;
+    display: flex;
+}
+
+h1 {
+    padding: 30px 20px;
+    color: white;
+}
+
+.laConferencia p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.botonOrador {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.botonTicket {
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.tituloConocerOradores {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.primerTitulo {
+    font-size: 10px;
+}
+
+.oradores {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    row-gap: 20px;
+}
+
+.orador {
+    text-align: center;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.573);
+}
+
+.imgOrador {
+    width: 100%;
+}
+
+.contenedorInformacionOrador {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.etiquetasOrador {
+    display: flex;
+    width: 75%;
+}
+
+.etiquetaPrimeraOrador {
+    background-color: rgb(250, 204, 78);
+    color: black;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.etiquetaSegundaOrador {
+    margin-left: 10px;
+    padding: 3px;
+    background-color: rgb(9, 115, 141);
+    color: white;
+    border-radius: 3px;
+}
+
+.etiquetaPrimeraOradorAda {
+    background-color: grey;
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.etiquetaSegundaOradorAda {
+    margin-left: 10px;
+    padding: 3px;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+}
+
+
+.nombreOrador,
+.informacionOrador {
+    text-align: left;
+}
+
+.lugarYFecha {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorLugarYFechaImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedorLugarYFechaInformacion {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.contenedorLugarYFechaAncla {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3px;
+    width: 30%;
+    text-align: center;
+}
+
+.convierteteEnOrador {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+}
+
+.descripcionConvierteteEnOrador span {
+    border-bottom: dashed rgb(15, 15, 15);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+}
+
+.parrafoFormulario {
+    text-align: left;
+    color: grey
+}
+
+.botonEnviar input {
+    width: 100%;
+    background-color: rgb(135, 212, 19);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(135, 212, 19);
+}
+
+.footer {
+    background-color: rgb(42, 138, 138);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer a {
+    padding: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .headerNavegacionYLogo {
         display: flex;
         width: 100%;
-        background-color: rgb(70, 81, 82);
-        flex-direction: column;
-    }
-
-    .contenedor {
-        margin: auto;
-        padding: 5px;
+        height: 10vh;
     }
 
     .headerNav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: initial;
-        padding: 1rem 1rem;
-        width: 100%;
-
-    }
-
-    .contenedorLogo {
-        width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .contenedorLogo a {
-        width: 50%;
-    }
-
-    .contenedorLogo img {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .contenedorLogo h2 {
-        color: white;
+        width: 60%;
+        padding: 0;
     }
 
     .navegacion {
-        width: 100%;
-
+        text-align: center;
+        margin: auto;
     }
 
     .listaNav {
-        list-style: none;
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        flex-direction: initial;
         align-items: center;
-        width: 100%;
-    }
-
-
-    .linkNav {
-        font-size: 1rem;
-        text-decoration: none;
-        color: white;
     }
 
     .laConferencia {
-        background: linear-gradient(to bottom, #00000085, #00000085), url("../assets/img/ba1.jpg");
-        height: 50vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding-right: initial;
-        text-align: right;
-        padding: 10px;
+        justify-content: end;
     }
 
-    h1 {
-        padding: 30px 20px;
-        color: white;
+    .contenedorLaConferencia {
+        margin-top: 20%;
+        width: 60%;
     }
-
-    .laConferencia p {
-        color: white;
-        margin-bottom: 20px;
-    }
-
-    .botonOrador {
-        text-decoration: none;
-        color: white;
-        border: 1px solid white;
-        border-radius: 3px;
-        padding: 5px;
-    }
-
-    .botonTicket {
-        text-decoration: none;
-        color: white;
-        border: 1px solid black;
-        background-color: green;
-        border-radius: 3px;
-        padding: 5px;
-    }
-
-    .tituloConocerOradores {
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .primerTitulo {
-        font-size: 10px;
-    }
-
-    .oradores {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin: auto;
-        row-gap: 20px;
-    }
-
-    .orador {
-        text-align: center;
-        width: 100%;
-        border: 1px solid rgba(128, 128, 128, 0.573);
-    }
-
-    .imgOrador {
-        width: 100%;
-    }
-
-    .contenedorInformacionOrador {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-    }
-
-    .etiquetasOrador {
-        display: flex;
-        width: 75%;
-    }
-
-    .etiquetaPrimeraOrador {
-        background-color: rgb(250, 204, 78);
-        color: black;
-        padding: 3px;
-        border-radius: 3px;
-    }
-
-    .etiquetaSegundaOrador {
-        margin-left: 10px;
-        padding: 3px;
-        background-color: rgb(9, 115, 141);
-        color: white;
-        border-radius: 3px;
-    }
-
-    .etiquetaPrimeraOradorAda {
-        background-color: grey;
-        color: white;
-        border-radius: 3px;
-        padding: 3px;
-    }
-
-    .etiquetaSegundaOradorAda {
-        margin-left: 10px;
-        padding: 3px;
-        background-color: red;
-        color: white;
-        border-radius: 3px;
-    }
-
-
-    .nombreOrador,
-    .informacionOrador {
-        text-align: left;
-    }
-
-    .lugarYFecha {
-        margin-top: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contenedorLugarYFechaImg img {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .contenedorLugarYFechaInformacion {
-        background-color: rgb(54, 54, 54);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        row-gap: 10px;
-        padding: 10px;
-    }
-
-    .contenedorLugarYFechaAncla {
-        color: white;
-        text-decoration: none;
-        border: 1px solid white;
-        border-radius: 3px;
-        padding: 3px;
-        width: 30%;
-        text-align: center;
-    }
-
-    .convierteteEnOrador {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        width: 100%;
-    }
-
-    .descripcionConvierteteEnOrador span {
-        border-bottom: dashed rgb(15, 15, 15);
-    }
-
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        width: 100%;
-    }
-
-    .parrafoFormulario {
-        text-align: left;
-        color: grey
-    }
-
-    .botonEnviar input {
-        width: 100%;
-        background-color: rgb(135, 212, 19);
-        color: white;
-        padding: 5px;
-        border-radius: 3px;
-        border: 1px solid rgb(135, 212, 19);
-    }
-
-    .footer {
-        background-color: rgb(42, 138, 138);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer a {
-        padding: 2px;
-        color: white;
-        text-decoration: none;
-    }
-
 }
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+
+@media (min-width: 1281px) {}
