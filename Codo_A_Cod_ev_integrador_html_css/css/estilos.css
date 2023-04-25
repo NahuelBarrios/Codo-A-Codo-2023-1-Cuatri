@@ -291,7 +291,7 @@ h1 {
     }
 
     .contenedorLaConferencia {
-        margin-top: 20%;
+        margin-top: 10%;
         width: 60%;
     }
 
@@ -429,4 +429,88 @@ h1 {
 }
 
 
-@media (min-width: 1281px) {}
+@media (min-width: 1281px) {
+    .headerNavegacionYLogo {
+        display: flex;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .headerNav {
+        width: 60%;
+        padding: 0;
+    }
+
+    .navegacion {
+        text-align: center;
+        margin: auto;
+    }
+
+    .listaNav {
+        width: 100%;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .laConferencia {
+        justify-content: end;
+        height: 80vh;
+    }
+
+    .contenedorLaConferencia {
+        margin-top: 20%;
+        width: 40%;
+    }
+
+    .primerTitulo {
+        font-size: 1.5rem;
+    }
+
+    .segundoTitulo {
+        font-size: 3rem;
+    }
+
+    .oradores {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .orador {
+        margin-left: 10px;
+    }
+
+    .lugarYFecha {
+        flex-direction: row;
+        height: 60vh;
+    }
+
+    .contenedorLugarYFechaImg {
+        height: 100%;
+        width: 50%;
+        border-right: 1px solid white;
+
+    }
+
+    .contenedorLugarYFechaImg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .contenedorLugarYFechaInformacion {
+        height: 100%;
+        width: 50%;
+    }
+
+    footer {
+        height: 8vh;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+}
